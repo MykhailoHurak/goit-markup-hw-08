@@ -5,35 +5,38 @@
 
 .header__container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.header__logo-menu {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  margin-left: 93px;
-}
+// .menu {
+//   // display: flex;
+//   // margin-left: 93px;
+// }
 
 .menu__item {
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 32px;
   }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .menu__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // display: block;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 47px;
   letter-spacing: 0.02em;
-  color: $color-headline;
-  position: relative;
+  color: #212121;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // color: $color-headline;
+  // position: relative;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,25 +62,35 @@
 
 .contacts {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+  flex-direction: column-reverse;
+  // align-items: center;
+  // margin-left: auto;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+.contacts__item {
+  &:not(:first-child) {
+    margin-bottom: 32px;
+  }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .contacts__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 34px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: $color-text;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  color: $color-accent;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -87,7 +100,13 @@
   }
 }
 
+.contacts__link--mail-font {
+  font-size: 24px;
+  color: $color-text;
+}
+
 .contacts__icon-mail {
+  display: none;
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -95,6 +114,7 @@
 }
 
 .contacts__icon-tel {
+  display: none;
   width: 10px;
   height: 16px;
   margin-right: 10px;
