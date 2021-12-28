@@ -56,6 +56,9 @@
   &.is-open {
     transform: translateX(0);
   }
+  @media (max-width: 439px) {
+    padding: 30px 30px;
+  }
 }
 
 // БЛОК 'СТУДИЯ-ПОРТФОЛИО-КОНТАКТЫ' -------------------------
@@ -102,6 +105,9 @@
   &:focus {
     color: $color-accent;
   }
+  @media (max-width: 439px) {
+    font-size: 28px;
+  }
   &--mail-font {
     font-size: 24px;
     color: $color-text;
@@ -111,7 +117,7 @@
 // БЛОК 'СОЦ СЕТИ' --------------------------------------
 .mob-social {
   display: none;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 440px) {
     display: flex;
     margin-top: 64px;
   }
@@ -140,17 +146,7 @@
   }
 }
 
-// ЭКРАН ШИРИНА ДО 479px
-@media (max-width: 479px) {
-  .mobile-menu {
-    padding: 24px 20px;
-  }
-  .mob-contacts__link {
-    font-size: 32px;
-    &--mail-font {
-      font-size: 24px;
-    }
-  }
+@media (max-width: 439px) {
   .mobile-social {
     display: flex;
     margin-top: 32px;
@@ -190,7 +186,7 @@
 }
 
 .mobile-social {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 440px) {
     display: none;
   }
 }

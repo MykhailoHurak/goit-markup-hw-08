@@ -47,14 +47,14 @@
             </li>
         </ul>
         <button class="mobile-menu__button-open js-open-menu" type="button">
-            <svg width="24" height="23">
+            <svg width="24" height="16">
                 <use href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
         </button>
         <div class="mobile-menu js-menu-container">
-            <button class="mobile-menu__button-close js-close-menu" type="button" data-modal-close>
+            <button class="mobile-menu__button-close js-close-menu" type="button">
                 <svg width="19" height="19">
-                    <use href="./images/icons.svg#icon-modal-close"></use>
+                    <use href="./images/icons.svg#icon-mobile-menu-close"></use>
                 </svg>
             </button>
             <nav>
@@ -81,10 +81,48 @@
                     </li>
                 </ul>
                 <ul class="mob-social">
-                    <li class="mob-social__item">Instagram</li>
-                    <li class="mob-social__item">Twitter</li>
-                    <li class="mob-social__item">Facebook</li>
-                    <li class="mob-social__item">LinkedIn</li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">Instagram</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">Twitter</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">Facebook</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">
+                            <svg class="mobile-social__logo">
+                                <use href="./images/icons.svg#icon-social-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">
+                            <svg class="mobile-social__logo">
+                                <use href="./images/icons.svg#icon-social-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">
+                            <svg class="mobile-social__logo">
+                                <use href="./images/icons.svg#icon-social-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">
+                            <svg class="mobile-social__logo">
+                                <use href="./images/icons.svg#icon-social-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -114,18 +152,29 @@
             <button class="filter__button" type="button">Маркетинг</button>
         </li>
     </ul>
-    <ul class="portfolio portfolio--margin">
+    <ul class="portfolio">
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img1-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img1-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img1-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img1-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img1-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img1-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/portfolio/portfolio-img1-354-1x.jpg"
-                    alt="Веб-сайт Технокряк" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img1-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img1-mob-900x588-2x.jpg 2x"
+                            type="image/jpeg" 
+                            media="(max-width: 767.5px)" />   
+                    <source srcset="./images/portfolio/portfolio-img1-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img1-tab-708x588-2x.jpg 2x"
+                            type="image/jpeg" 
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img1-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img1-web-740x588-2x.jpg 2x"
+                            type="image/jpeg" 
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img1.jpg" 
+                         alt="Веб-сайт Технокряк"
+                         width="450" 
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img1.jpg" alt="Веб-сайт Технокряк" width="370" height="294"> -->
                     <p class="portfolio__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -139,14 +188,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img2-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img2-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img2-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img2-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img2-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img2-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw" src="./images/portfolio/portfolio-img2-354-1x.jpg"
-                    alt="Постер New Orlean vs Golden Star" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img2-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img2-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img2-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img2-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img2-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img2-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img2.jpg" 
+                         alt="Постер New Orlean vs Golden Star" 
+                         width="450"
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img2.jpg" alt="Дизайн Постер New Orlean vs Golden Star" width="370" height="294"> -->
                     <p class="portfolio__description">Постер New Orlean vs Golden Star</p>
                 </div>
@@ -159,14 +219,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                    <img class="project__img" srcset="./images/portfolio/portfolio-img3-354-1x.jpg 354w,
-                                                      ./images/portfolio/portfolio-img3-370-1x.jpg 370w, 
-                                                      ./images/portfolio/portfolio-img3-450-1x.jpg 450w, 
-                                                      ./images/portfolio/portfolio-img3-354-2x.jpg 708w, 
-                                                      ./images/portfolio/portfolio-img3-370-2x.jpg 740w, 
-                                                      ./images/portfolio/portfolio-img3-450-2x.jpg 900w"
-                        sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                        src="./images/portfolio/portfolio-img3-354-1x.jpg" alt="Приложение Ресторан Seafood" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img3-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img3-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img3-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img3-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img3-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img3-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img3.jpg" 
+                         alt="Ресторан Seafood"
+                         width="450" 
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img3.jpg" alt="Приложение Ресторан Seafood" width="370" height="294"> -->
                     <p class="portfolio__description">Ресторан Seafood</p>
                 </div>
@@ -179,14 +250,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img4-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img4-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img4-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img4-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img4-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img4-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                    src="./images/portfolio/portfolio-img4-354-1x.jpg" alt="Маркетинг Проект Prime" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img4-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img4-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img4-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img4-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img4-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img4-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img4.jpg" 
+                         alt="Проект Prime" 
+                         width="450"
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img4.jpg" alt="Маркетинг Проект Prime" width="370" height="294"> -->
                     <p class="portfolio__description">Проект Prime</p>
                 </div>
@@ -199,14 +281,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img5-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img5-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img5-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img5-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img5-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img5-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                    src="./images/portfolio/portfolio-img5-354-1x.jpg" alt="Веб-сайт Проект Boxes" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img5-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img5-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img5-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img5-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img5-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img5-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img5.jpg" 
+                         alt="Проект Boxes" 
+                         width="450"
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img5.jpg" alt="Веб-сайт Проект Boxes" width="370" height="294"> -->
                     <p class="portfolio__description">Проект Boxes</p>
                 </div>
@@ -219,14 +312,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img6-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img6-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img6-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img6-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img6-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img6-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                    src="./images/portfolio/portfolio-img6-354-1x.jpg" alt="Веб-сайт Inspiration has no Borders" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img6-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img6-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img6-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img6-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img6-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img6-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img6.jpg" 
+                         alt="Inspiration has no Borders" 
+                         width="450"
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" height="294"> -->
                     <p class="portfolio__description">Inspiration has no Borders</p>
                 </div>
@@ -239,14 +343,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img7-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img7-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img7-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img7-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img7-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img7-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                    src="./images/portfolio/portfolio-img7-354-1x.jpg" alt="Дизайн Издание Limited Edition" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img7-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img7-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img7-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img7-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img7-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img7-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img7.jpg" 
+                         alt="Издание Limited Edition" 
+                         width="450"
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img7.jpg" alt="Дизайн Издание Limited Edition" width="370" height="294"> -->
                     <p class="portfolio__description">Издание Limited Edition</p>
                 </div>
@@ -259,14 +374,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img8-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img8-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img8-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img8-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img8-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img8-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                    src="./images/portfolio/portfolio-img8-354-1x.jpg" alt="Маркетинг Проект LAB" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img8-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img8-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img8-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img8-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img8-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img8-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img8.jpg" 
+                         alt="Проект LAB" 
+                         width="450"
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img8.jpg" alt="Маркетинг Проект LAB" width="370" height="294"> -->
                     <p class="portfolio__description">Проект LAB</p>
                 </div>
@@ -279,14 +405,25 @@
         <li class="portfolio__item">
             <a class="portfolio__link" href="">
                 <div class="portfolio__img-description">
-                <img class="project__img" srcset="./images/portfolio/portfolio-img9-354-1x.jpg 354w,
-                                                  ./images/portfolio/portfolio-img9-370-1x.jpg 370w, 
-                                                  ./images/portfolio/portfolio-img9-450-1x.jpg 450w, 
-                                                  ./images/portfolio/portfolio-img9-354-2x.jpg 708w, 
-                                                  ./images/portfolio/portfolio-img9-370-2x.jpg 740w, 
-                                                  ./images/portfolio/portfolio-img9-450-2x.jpg 900w"
-                    sizes="(max-width: 767.5px) 100vw, (max-width: 1199px) 50vw, 30vw"
-                    src="./images/portfolio/portfolio-img9-354-1x.jpg" alt="Приложение Growing Business" />
+                <picture>
+                    <source srcset="./images/portfolio/portfolio-img9-mob-450x294-1x.jpg 1x, 
+                                    ./images/portfolio/portfolio-img9-mob-900x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(max-width: 767.5px)" />
+                    <source srcset="./images/portfolio/portfolio-img9-tab-354x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img9-tab-708x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/portfolio-img9-web-370x294-1x.jpg 1x,
+                                    ./images/portfolio/portfolio-img9-web-740x588-2x.jpg 2x" 
+                            type="image/jpeg"
+                            media="(min-width: 1200px)" />
+                    <img class="portfolio__img" 
+                         src="./images/portfolio/portfolio-img9.jpg" 
+                         alt="Growing Business" 
+                         width="450" 
+                         height="294" />
+                </picture>
                     <!-- <img class="portfolio__img" src="./images/portfolio/portfolio-img9.jpg" alt="Приложение Growing Business" width="370" height="294"> -->
                     <p class="portfolio__description">Growing Business</p>
                 </div>
